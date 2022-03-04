@@ -19,7 +19,7 @@ html {
 
 body::-webkit-scrollbar 
 {
- width: 10px;
+ width: 5px;
  margin-left: -10px;
 }
 body::-webkit-scrollbar-track 
@@ -35,44 +35,18 @@ body::-webkit-scrollbar-thumb
 
 .main {
     margin-top:0px;
-    padding-left: 15px;
     align-self: center;
-    padding-right: 15px;
-    height: 320px;
     vertical-align: top;
     margin-bottom: 0px;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
     border:0px;
-    border-spacing: 0px;
-}
-
-.main2 {
-    margin-top:-25px;
-    padding-left: 0px;
-    align-self: center;
-    padding-right: 15px;
-    filter: blur(20px) brightness(50%);
-    -moz-filter: blur(10px) brightness(50%);
-    -webkit-filter: blur(10px) brightness(50%);
-    -o-filter: blur(20px);
-    background-image:url("https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9");
-    height: 345px;
-    vertical-align: top;
-    margin-bottom: 0px;
-    width: 97%;
-    padding-left: 50px;
-    padding-right: 50px;
-    border:0px;
-    margin-left: -40px;
     border-spacing: 0px;
 }
 
 .grid-items {
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     align-self: auto;
     display: grid;
     grid-column-gap: 0;
@@ -82,7 +56,7 @@ body::-webkit-scrollbar-thumb
 .bigitem {
     margin-left: 2%;
     margin-right: 2%;
-    width: 98%;
+    width: 96%;
     align-self: auto;
     display: grid;
     grid-column-gap: 0;
@@ -90,7 +64,10 @@ body::-webkit-scrollbar-thumb
 }
 
 .grid-items {
-    height: 300px;
+    min-height: 250px;
+    height: auto;
+    margin: 20px 20px 20px 20px;
+    width: 94.4%;
 }
 
 @media only screen and (min-width: 750px) {
@@ -104,7 +81,6 @@ body::-webkit-scrollbar-thumb
   @media only screen and (min-width: 1000px) {
     .grid-items {
       grid-template-columns: repeat(3, 33%);
-      grid-column-gap: 1.53%;
       grid-row-gap: 20px;
     }
   }
@@ -126,12 +102,8 @@ td.pfpcontainer {
 
 .pfp {
     border-radius: 50%;
-    width:200px;
-    height: 200px;
-}
-
-td {
-    padding: 0px;
+    width: 180;
+    height: 180;
 }
 
 .title {
@@ -141,12 +113,8 @@ td {
     color:#f7f0f5;
 }
 
-.grid-items {
-  padding-top: 340px;
-}
-
 .desc {
-    padding-left:25px;
+    padding: 0px 0px 0px 25px;
     font-family: 'Roboto Serif', sans-serif;
     font-size: 20px;
     color:#f7f0f5;
@@ -155,8 +123,8 @@ td {
 .textmf {
     vertical-align: top;
     height: 100%;
-    padding-top: 10px;
     text-align: left;
+    margin: 40 20 40 0;
 }
 
 .grid-item {
@@ -165,21 +133,26 @@ td {
 }
 
 td.pfpcontainer {
-    width: 200px;
-}
-
-.buttons {
-    padding-top: 15px;
+    width: 180;
+    height: 180;
+    padding: 0 0 0 30;
 }
 
 button {
-    padding: 10px 15px 10px 15px;
     border: none;
     font-family: 'Roboto Serif', sans-serif;
-    font-size:18px;
+    font-size:15px;
     border-radius:5px;
     background-color: #262921;
     color:whitesmoke;
+    padding: 10 12 10 12;
+    margin: 0 5 10 5;
+}
+
+.biostuffs {
+    background-image: url("https://media.discordapp.net/attachments/935998614868750346/949399276012847134/photo-1555099962-4199c345e5dd_ixlibrb-1.2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 button:hover {
